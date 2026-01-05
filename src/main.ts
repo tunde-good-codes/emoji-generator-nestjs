@@ -12,7 +12,7 @@ async function bootstrap() {
       disableErrorMessages: false,
     }),
   );
-  const host = `0.0.0.0`;
+  const host = `0.0.0.0`; // for railway deployment
   await app.listen(process.env.PORT ?? 3000, host);
 }
 bootstrap();
