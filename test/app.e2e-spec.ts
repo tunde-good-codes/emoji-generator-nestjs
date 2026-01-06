@@ -22,7 +22,7 @@ describe("AppController (e2e)", () => {
     // ...
   });
   describe(`/?index=X (GET)`, () => {
-    it(`should return the indexed emoji`, () => {
+    it(`should return the indexed emojis with a note of info`, () => {
       const index = 0;
       const emojis = appService.getEmojis();
       const emoji = emojis[index];
